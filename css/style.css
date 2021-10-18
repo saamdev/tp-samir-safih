@@ -1,0 +1,106 @@
+* 
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.top_page{
+    background-color: #2d3381;
+    background-image: url(../images/banniere-accueil.jpg);background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    background-position: center;
+    background-size: cover;
+    
+    
+     
+}
+
+.nav{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    color: white;
+    
+
+}
+
+.nav ul {
+    font-family: lato;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}    
+.nav ul li a {
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+
+}
+.nav ul li a:hover {
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 5px;
+
+}
+
+.button {
+    background-color: red;
+    border: none;
+    color : white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin-left : 48% ;
+     
+}
+.mid_page img {
+    height: 12em;
+    margin: 10em;
+}
+.button2 {
+    background-color: red;
+    border: none;
+    color : white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin-left : 48% ;
+}
+.mid_page {
+    color: darkblue;
+}
+
+.mid{
+    
+}
+
+
+
+    
+
+
+.Titre{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 3em;
+    
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin-left: 1em;
+}
