@@ -1,20 +1,22 @@
-* 
-body{
+/* l'étoile * ce selecteur signifie "all, c'est à dire tous les éléments et on peu lui donner les propriétés suivantes  */
+* {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    padding: 0;
+    box-sizing:border-box /* pour inclure la valeur d'un border dans la width ou la height de l'élément*/
+}
+body{
+    font-family: 'Lato', sans-serif; /* 👍 */
 }
 
 .top_page{
     background-color: #2d3381;
-    background-image: url(../images/banniere-accueil.jpg);background-blend-mode: soft-light;
+    background-image: url(../images/banniere-accueil.jpg); /* 👍 */
+    background-blend-mode: soft-light;/* 👍 */
     background-repeat: no-repeat;
-    height: 80vh;
-
-    background-position: center;
-    background-size: cover;
-    
-    
-     
+    height: 100vh; /* 100vh mieux que 80vh*/
+    background-position: center;/* 👍 */
+    background-size: cover;/* 👍 */ 
+    text-align:center /* centre le bouton rouge de l'accueil*/
 }
 
 .nav{
@@ -22,28 +24,24 @@ body{
     padding: 16px;
     justify-content: space-between;
     color: white;
-    
-
 }
 
 .nav ul {
-    font-family: lato;
+    /* font-family: lato;  pas besoin de le préciser car tu l'as spécifié dans body, donc tout ton texte sera en lato selon le principe d'héritage de propriété*/
     display: flex;
     align-items: center;
-    list-style: none;
-    
+    list-style: none;  
 }    
 .nav ul li a {
     color: #fff;
     padding: 12px;
     text-decoration: none;
-
 }
+/* Bien vu l'utilisation du hover :) */
 .nav ul li a:hover {
     background-color: white;
     color: #1a1a1a;
     border-radius: 5px;
-
 }
 
 .button {
@@ -52,12 +50,14 @@ body{
     color : white;
     padding: 15px;
     text-align: center;
-    display: inline-block;
+    display: inline-block; /* très bien 👍 */
     font-size: 1rem;
     margin: 4px 2px;
     border-radius: 2rem;
     text-decoration: none;
-    margin-left : 48% ;
+    /* margin-left : 48%  ===> Noooo c'est un faux centrage 
+    pour centrer ce bouton, tu peux dire à son parent : text-align:center, le parent c'est top-page
+    ; */
      
 }
 .mid_page img {
@@ -95,8 +95,6 @@ body{
     font-size: 50px;
     text-align: center;
     margin-top: 3em;
-    
-
 }
 
 h2{
@@ -104,3 +102,23 @@ h2{
     color: white;
     margin-left: 1em;
 }
+
+
+/* Samir, je suis agréablement surprise par ton travail!!
+tu as réussi la partie la plus difficile de l'exercice : la page d'accueil, 
+ton travail est propre et répond à ce qui est demandé, et il est responsive ( vous étiez 2 ou 3 à l'avoir réussi.
+
+pour les sections suivantes, je suis certaine que tu les aurais réussi s'il y avait plus de temps.
+
+Le principe est le suivant :
+- créer une div parent
+- répartir ton contenu en div enfants
+- utiliser le flexbox pour gérer la mise en page et le responsive 
+==> je t'invite à voir le corrigé du projet, et de le reproduire, ça te permettera de compléter ce qui manquait.
+
+Dans l'ensemble, ton travail est réussi, même s'il n'est pas complet, je valide la partie accomplie.
+
+Continue sur ta lancée, tu as toutes les qualités requises pour réussir ; )
+
+
+*/
